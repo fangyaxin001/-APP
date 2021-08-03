@@ -1,0 +1,167 @@
+{
+    "name" : "神奇黑板报",
+    "appid" : "__UNI__6F0A1A0",
+    "description" : "神奇黑板报",
+    "versionName" : "1.1.6",
+    "versionCode" : 206,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "compatible" : {
+            "ignoreVersion" : true //true 表示忽略版本检测提示框
+        },
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "privacy" : {
+            "prompt" : "template", //可取值template、custom、none
+            "template" : {
+                //prompt取值为template时有效，用于配置模板提示框上显示的内容
+                "title" : "用户协议和隐私政策",
+                "message" : "　　尊敬的用户，欢迎您注册成为本应用用户，在注册前请您仔细阅读<a href='http://www.sqhbb.com/index/index/zhuche'>《用户协议》</a>和<a href='http://www.sqhbb.com/index/index/xieyi'>《隐私政策》</a>，了解我们对您使用我们APP制定的规则，您个人信息的处理以及申请权限的目的和使用范围。<br/>　　经您确认后，本用户协议和隐私权政策即在您和本应用之间产生法律效力。请您务必在注册之前认真阅读全部服务协议内容，如有任何疑问，可向本应用客服咨询。",
+                "buttonAccept" : "同意并使用",
+                "buttonRefuse" : "暂不使用"
+            }
+        },
+        /* 模块配置 */
+        "modules" : {
+            "VideoPlayer" : {},
+            "OAuth" : {},
+            "Speech" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "idfa" : false,
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "该应用需要访问相册进行图片上传，头像上传",
+                    "NSPhotoLibraryAddUsageDescription" : "该应用需要访问相册进行图片保存",
+                    "NSCameraUsageDescription" : "该应用需要你的相机，以便你拍摄图片上传头像",
+                    "NSMicrophoneUsageDescription" : "该应用需要访问你的麦克风权限，以便于你发送语音进行聊天",
+                    "NSLocationWhenInUseUsageDescription" : "",
+                    "NSLocationAlwaysUsageDescription" : "",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "根据用户定位，对用户进行附近资讯推荐与查看线下活动详细地址"
+                }
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {},
+                "push" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx6daab17b2ccc3b44",
+                        "appsecret" : "65ee220863ef7b9473847ffed78299f4",
+                        "UniversalLinks" : "https://www.sqhbb.com/apple-app-site-association"
+                    }
+                },
+                "speech" : {
+                    "ifly" : {}
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "common"
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "router" : {
+            "mode" : "history",
+            "base" : "/h5/"
+        },
+        "title" : "神奇黑板报",
+        "domain" : "",
+        "sdkConfigs" : {
+            "maps" : {}
+        },
+        "devServer" : {
+            "https" : false
+        },
+        "template" : "static/index.html"
+    }
+}
